@@ -42,9 +42,11 @@
 
 header {
   background-image: url(https://templatemo.com/templates/templatemo_577_liberty_market/assets/images/banner-bg.jpg);
-  height: 100vh;
+  height: 120vh;
   background-position: center;
   background-size: cover;
+  position: relative;
+  background-repeat: repeat;
 }
 
 nav {
@@ -52,10 +54,9 @@ nav {
 }
 
 nav {
-  position: fixed;
+  position: absolute;
   border: 1px solid white;
   width: 90%;
-
   left: 5%;
   top: 2rem;
   display: flex;
@@ -84,6 +85,16 @@ nav > ul > li {
   transition: 0.4s ease;
 }
 
+#icon {
+  display: none;
+
+  align-self: center;
+  margin-right: 1.5rem;
+  font-size: 2.5rem;
+  color: var(--bs-blue);
+  cursor: pointer;
+}
+
 .active {
   padding: 7px 12px;
   background-color: var(--bs-indigo);
@@ -97,4 +108,129 @@ nav > ul > li:hover {
   color: white;
   border-radius: 25px;
   cursor: pointer;
+}
+
+.nft_box {
+  width: 90%;
+  position: absolute;
+  top: 17rem;
+  left: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nft_box > img {
+  margin-left: 8rem;
+
+  max-width: 510px;
+  max-height: 430px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.nft_text > h6 {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.nft_text > h2 {
+  font-size: 50px;
+  color: #ffffff;
+  margin: 15px 0 20px 0;
+}
+
+.nft_text > p {
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 30px;
+}
+
+.button_container {
+  display: flex;
+}
+
+.button_container > button {
+  margin-top: 2rem;
+}
+
+.button_container > button:first-of-type {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 15px 35px;
+  border: 1px solid var(--bs-blue);
+  margin-right: 30px;
+  color: rgb(255 255 255);
+  border-radius: 25px;
+  background: transparent;
+  transition: 0.3s ease;
+  position: relative;
+  z-index: 0;
+}
+
+.line {
+  height: 3px;
+  width: 80%;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  right: 9%;
+}
+
+.button_container > button:nth-of-type(2) {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 15px 35px;
+  border: 1px solid var(--bs-blue);
+
+  color: rgb(255 255 255);
+  border-radius: 25px;
+  background: transparent;
+  transition: 0.3s ease;
+  background-color: var(--bs-blue);
+  position: relative;
+}
+
+.button_container > button:first-of-type:hover {
+  background-color: var(--bs-blue);
+}
+
+.button_container > button:nth-of-type(2):hover {
+  border: 1px solid rgb(255 255 255);
+  background-color: rgb(255 255 255);
+  color: var(--bs-blue);
+}
+
+@media only screen and (max-width: 900px) {
+  nav > ul {
+    display: none;
+  }
+
+  #icon {
+    display: block;
+  }
+
+  .nft_box {
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nft_box > img {
+    display: block;
+    width: 100%;
+    margin: 2rem auto 0;
+  }
+
+  .button_container {
+    display: flex;
+  }
+}
+
+@media only screen and(min-width: 992px) {
+  .nft_text {
+    flex: 0 0 auto;
+    width: 50%;
+  }
 }
