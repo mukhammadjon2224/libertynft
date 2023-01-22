@@ -200,111 +200,6 @@ nav > ul > li:hover {
   color: var(--bs-blue);
 }
 
-
-.createnft_section {
-  padding: 120px 0;
-  margin: auto;
-  background: url(https://templatemo.com/templates/templatemo_577_liberty_market/assets/images/main-bg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.market_container {
-  width: 90%;
-  margin: auto;
-}
-
-.market_text {
-  border: 1px solid red;
-  display: flex;
-
-  justify-content: space-between;
-}
-
-.market_text > h2 {
-  position: relative;
-  border: 1px solid yellow;
-
-  padding-top: 25px;
-}
-
-.line1 {
-  height: 2px;
-  background-color: white;
-  width: 100px;
-  position: absolute;
-  top: 0;
-}
-
-.market_text > h2 {
-  color: #fff;
-  line-height: 36px;
-  font-size: 30px;
-  font-weight: 700;
-}
-
-.button_nft {
-  position: relative;
-  border: 1px solid green;
-}
-
-.market_text > button {
-  font-size: 14px;
-  color: #fff;
-  background-color: #7453fc;
-  border: 1px solid #7453fc;
-  padding: 15px 35px;
-  display: inline-block;
-  border-radius: 25px;
-  font-weight: 500;
-  text-transform: capitalize;
-  letter-spacing: 0.5px;
-  transition: all 0.3s;
-}
-
-.line2 {
-  height: 2px;
-  background-color: #fff;
-  position: absolute;
-  width: 180px;
-  bottom: 20%;
-  left: 8%;
-}
-
-.market_nft {
-  border: 1px solid rgb(50, 50, 40);
-  margin-top: 2rem;
-  display: flex;
-}
-
-.market_nft > article {
-  border: 1px solid salmon;
-  width: 33.3%;
-  color: #fff;
-  padding: 0 1rem;
-}
-
-.market_nft > article > img {
-  padding: 15px;
-  border: 1px solid red;
-  background-color: #fff;
-  color: #007aff;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.market_nft > article > h4 {
-  margin: 1rem 0;
-  font-size: 20px;
-}
-
-.market_nft > article > p {
-  font-size: 15px;
-
-  line-height: 2rem;
-
 .category_section {
   background-image: url(https://templatemo.com/templates/templatemo_577_liberty_market/assets/images/dark-bg.jpg);
   object-position: center;
@@ -462,7 +357,111 @@ nav > ul > li:hover {
 .text_container > button:hover {
   background-color: white;
   color: var(--bs-indigo);
+}
 
+.createnft_section {
+  padding: 120px 0;
+  margin: auto;
+  background: url(https://templatemo.com/templates/templatemo_577_liberty_market/assets/images/main-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.market_container {
+  width: 90%;
+  margin: auto;
+}
+
+.market_text {
+  border: 1px solid red;
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.market_text > h2 {
+  position: relative;
+  border: 1px solid yellow;
+
+  padding-top: 25px;
+}
+
+.line1 {
+  height: 2px;
+  background-color: white;
+  width: 100px;
+  position: absolute;
+  top: 0;
+}
+
+.market_text > h2 {
+  color: #fff;
+  line-height: 36px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.button_nft {
+  position: relative;
+  border: 1px solid green;
+}
+
+.market_text > button {
+  font-size: 14px;
+  color: #fff;
+  background-color: #7453fc;
+  border: 1px solid #7453fc;
+  padding: 15px 35px;
+  display: inline-block;
+  border-radius: 25px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all 0.3s;
+}
+
+.line2 {
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  width: 180px;
+  bottom: 20%;
+  left: 8%;
+}
+
+.market_nft {
+  border: 1px solid rgb(50, 50, 40);
+  margin-top: 2rem;
+  display: flex;
+}
+
+.market_nft > article {
+  border: 1px solid salmon;
+  width: 33.3%;
+  color: #fff;
+  padding: 0 1rem;
+}
+
+.market_nft > article > img {
+  padding: 15px;
+  border: 1px solid red;
+  background-color: #fff;
+  color: #007aff;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.market_nft > article > h4 {
+  margin: 1rem 0;
+  font-size: 20px;
+}
+
+.market_nft > article > p {
+  font-size: 15px;
+
+  line-height: 2rem;
 }
 
 @media only screen and (max-width: 900px) {
