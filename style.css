@@ -40,6 +40,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   background-image: url(https://templatemo.com/templates/templatemo_577_liberty_market/assets/images/banner-bg.jpg);
   min-height: 100vh;
@@ -169,7 +173,7 @@ nav > ul > li:hover {
   background-color: #ffffff;
   position: absolute;
   bottom: 0;
-  right: 9%;
+  right: 10%;
 }
 
 .button_container > button:nth-of-type(2) {
@@ -195,6 +199,7 @@ nav > ul > li:hover {
   background-color: rgb(255 255 255);
   color: var(--bs-blue);
 }
+
 
 .createnft_section {
   padding: 120px 0;
@@ -299,6 +304,165 @@ nav > ul > li:hover {
   font-size: 15px;
 
   line-height: 2rem;
+
+.category_section {
+  background-image: url(https://templatemo.com/templates/templatemo_577_liberty_market/assets/images/dark-bg.jpg);
+  object-position: center;
+  object-fit: cover;
+  padding: 5rem 1rem;
+}
+
+.small_line {
+  background-color: var(--bs-indigo);
+  width: 7%;
+  height: 3px;
+  margin: 3rem auto 0 auto;
+}
+
+.category_section > h1 {
+  color: white;
+  margin: 1rem 0;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+}
+
+.category_container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 10rem;
+}
+
+.blockchain {
+  border: 1px solid #404245;
+  background-color: #282b2f;
+  border-radius: 15px;
+  width: 300px;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.blockchain > img {
+  background-color: white;
+  border-radius: 50%;
+  padding: 1rem;
+  width: 62px;
+  height: 62px;
+  object-position: center;
+  object-fit: cover;
+}
+
+.blockchain > h1 {
+  color: white;
+  margin-top: 1rem;
+  font-size: 17px;
+}
+
+.blockchain_btn {
+  padding: 1rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: var(--bs-indigo);
+  position: absolute;
+  bottom: -1.5rem;
+  visibility: hidden;
+  border: none;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+}
+
+.blockchain:hover .blockchain_btn {
+  visibility: visible;
+  background-color: white;
+}
+
+.blockchain_btn:hover {
+  background-color: var(--bs-indigo) !important;
+  color: white;
+  transition: 0.5s ease;
+}
+
+.collections {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.collections_container {
+  width: 300px;
+  color: white;
+  height: 500px;
+  position: relative;
+}
+
+.collections_container > img {
+  width: 100%;
+  height: 60%;
+  object-position: center;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.text_container {
+  background-color: #282b2f;
+  padding: 2rem 1rem;
+  height: 40%;
+  z-index: 1;
+  position: relative;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.text_container > h1 {
+  margin-bottom: 1.5rem;
+}
+
+.container_line {
+  width: 100%;
+  height: 1px;
+  background-color: #404245;
+  margin-bottom: 1.5rem;
+}
+
+.text_container > button {
+  padding: 7px 70px;
+  background-color: var(--bs-indigo);
+  border-radius: 25px;
+  border: none;
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  z-index: 3;
+
+  bottom: -1rem;
+}
+
+.text-container2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+
+.text-container2 > p {
+  margin-bottom: 8px;
+}
+
+.text_container > button:hover {
+  background-color: white;
+  color: var(--bs-indigo);
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -324,6 +488,10 @@ nav > ul > li:hover {
 
   .button_container {
     display: flex;
+  }
+
+  .collections {
+    justify-content: center;
   }
 }
 
