@@ -482,7 +482,6 @@ nav > ul > li:hover {
 
 .items_section {
   background-image: url(https://templatemo.com/templates/templatemo_577_liberty_market/assets/images/dark-bg.jpg);
-  height: 500px;
   padding: 5rem 0;
 }
 
@@ -498,8 +497,13 @@ nav > ul > li:hover {
   flex-direction: column;
 }
 
+.item_title > h1 {
+  color: white;
+  font-size: 2rem;
+}
+
 .item_line {
-  height: 4px;
+  height: 3px;
   background-color: var(--bs-indigo);
   width: 100px;
   margin-bottom: 1rem;
@@ -526,6 +530,79 @@ nav > ul > li:hover {
 .items_container > ul > li:hover {
   background-color: var(--bs-indigo);
   border-radius: 20px;
+}
+
+.informer {
+  width: 90%;
+  margin: auto;
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.informer_container {
+  border: 2px solid #404245;
+  width: 600px;
+  display: flex;
+  padding: 2rem;
+  border-radius: 20px;
+  background-color: #282b2f;
+  gap: 1.5rem;
+  color: white;
+}
+
+.informer_img > img {
+  border-radius: 20px;
+}
+
+.informer_text {
+  width: 100%;
+}
+
+.informer_line {
+  width: 100%;
+  height: 1px;
+  background-color: #404245;
+  margin-bottom: 25px;
+  margin-top: 30px;
+}
+
+.contact {
+  display: flex;
+  margin-top: 1.5rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact > img {
+  border-radius: 50%;
+}
+
+.text_bottom {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2rem;
+  margin-bottom: 3rem;
+}
+
+.right_colum {
+  text-align: right;
+}
+
+.informer_text > a {
+  color: var(--bs-indigo);
+  font-weight: 600;
+}
+
+footer {
+  background-color: rgb(121 87 244);
+  padding: 2rem 0;
+}
+
+footer > p {
+  color: rgb(185, 185, 185);
+  text-align: center;
 }
 
 @media only screen and (max-width: 900px) {
@@ -591,6 +668,11 @@ nav > ul > li:hover {
 
   .item_title {
     align-items: center;
+  }
+
+  .informer {
+    flex-direction: column;
+    gap: 2rem;
   }
 }
 
