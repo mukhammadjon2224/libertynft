@@ -374,7 +374,6 @@ nav > ul > li:hover {
 }
 
 .market_text {
-  border: 1px solid red;
   display: flex;
 
   justify-content: space-between;
@@ -382,7 +381,6 @@ nav > ul > li:hover {
 
 .market_text > h2 {
   position: relative;
-  border: 1px solid yellow;
 
   padding-top: 25px;
 }
@@ -404,7 +402,6 @@ nav > ul > li:hover {
 
 .button_nft {
   position: relative;
-  border: 1px solid green;
 }
 
 .market_text > button {
@@ -419,38 +416,40 @@ nav > ul > li:hover {
   text-transform: capitalize;
   letter-spacing: 0.5px;
   transition: all 0.3s;
+  position: relative;
 }
 
 .line2 {
   height: 2px;
   background-color: #fff;
   position: absolute;
-  width: 180px;
-  bottom: 20%;
-  left: 8%;
+  width: 80%;
+  bottom: 0;
+  left: 10%;
 }
 
 .market_nft {
-  border: 1px solid rgb(50, 50, 40);
   margin-top: 2rem;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .market_nft > article {
-  border: 1px solid salmon;
-  width: 33.3%;
+  width: 450px;
   color: #fff;
   padding: 0 1rem;
 }
 
 .market_nft > article > img {
   padding: 15px;
-  border: 1px solid red;
+
+  display: inline-block;
   background-color: #fff;
   color: #007aff;
-  border-radius: 50%;
-  object-fit: cover;
+  /* object-fit: cover; */
   object-position: center;
+  /* overflow: hidden; */
+  border-radius: 50%;
 }
 
 .market_nft > article > h4 {
@@ -462,6 +461,23 @@ nav > ul > li:hover {
   font-size: 15px;
 
   line-height: 2rem;
+}
+
+.with_border {
+  border-left: 1px solid rgb(247, 245, 245);
+  position: relative;
+}
+
+.with_border > span {
+  position: absolute;
+  top: -1.2rem;
+  left: -6px;
+}
+
+.market_text > button:hover {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #007aff;
 }
 
 @media only screen and (max-width: 900px) {
@@ -491,6 +507,33 @@ nav > ul > li:hover {
 
   .collections {
     justify-content: center;
+  }
+
+  .market_nft {
+    gap: 2rem;
+  }
+
+  .market_text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .line1 {
+    left: 38%;
+  }
+
+  .with_border {
+    border: none;
+  }
+
+  .with_border > span {
+    display: none;
+  }
+
+  .market_nft > article {
+    text-align: center;
   }
 }
 
