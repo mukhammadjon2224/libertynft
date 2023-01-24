@@ -480,6 +480,54 @@ nav > ul > li:hover {
   color: #007aff;
 }
 
+.items_section {
+  background-image: url(https://templatemo.com/templates/templatemo_577_liberty_market/assets/images/dark-bg.jpg);
+  height: 500px;
+  padding: 5rem 0;
+}
+
+.items_container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item_title {
+  display: flex;
+  flex-direction: column;
+}
+
+.item_line {
+  height: 4px;
+  background-color: var(--bs-indigo);
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.items_container > ul {
+  display: flex;
+  gap: 1rem;
+  color: white;
+  list-style-type: none;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.items_container > ul > li {
+  padding: 10px 20px;
+}
+
+.items_container > ul > li:nth-child(1) {
+  background-color: var(--bs-indigo);
+  border-radius: 20px;
+}
+
+.items_container > ul > li:hover {
+  background-color: var(--bs-indigo);
+  border-radius: 20px;
+}
+
 @media only screen and (max-width: 900px) {
   nav > ul {
     display: none;
@@ -534,6 +582,15 @@ nav > ul > li:hover {
 
   .market_nft > article {
     text-align: center;
+  }
+
+  .items_container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .item_title {
+    align-items: center;
   }
 }
 
